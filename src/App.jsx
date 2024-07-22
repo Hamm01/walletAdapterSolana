@@ -1,16 +1,13 @@
 import React, { FC, useMemo } from 'react'
+import Navbar from './Navbar'
 import WalletHome from './walletHome'
-import {
-  WalletDisconnectButton,
-  WalletMultiButton
-} from '@solana/wallet-adapter-react-ui'
 
 function App() {
   return (
     <WalletHome>
-      <div>
-        <h1>Wallet adapter functions</h1>
-      </div>
+      <main className="max-w-7xl mx-auto flex flex-col gap-4 p-4 min-h-[92vh] ">
+        <Navbar />
+      </main>
     </WalletHome>
   )
 }
