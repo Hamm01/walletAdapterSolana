@@ -8,7 +8,7 @@ import { WalletModalProvider } from '@solana/wallet-adapter-react-ui'
 
 import '@solana/wallet-adapter-react-ui/styles.css'
 
-export default function WalletHome({ children }) {
+export default function WalletContextProvider({ children }) {
   const endpoint = 'https://api.devnet.solana.com'
   return (
     <div>
