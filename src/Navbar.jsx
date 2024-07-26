@@ -7,8 +7,14 @@ export default function Navbar() {
   return (
     <nav className="flex flex-row py-4 justify-between items-center">
       <div className="flex items-start gap-2">
-        <h3 className="righteous-regular scroll-m-20 text-4xl font-semibold tracking-tight">
-          WalletConnector
+        <img
+          src="solanaLogo.svg"
+          alt="Solana wallet"
+          width="250px"
+          height="250px"
+        />
+        <h3 className="scroll-m-20 text-md font-semibold tracking-tight">
+          AirDrop
         </h3>
       </div>
       <div className="flex justify-center items-center gap-4">

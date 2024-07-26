@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg_color_body {
+    background-color: hsl(240 10% 3.9%);
+}
+
+.input_Amount {
+    display: flex;
+    height: 2.5rem;
+    width: 100%;
+    border-radius: calc(0.5rem - 2px);
+    border-width: 1px;
+    padding: .5rem .75rem;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    border-color: hsl(240 3.7% 15.9%);
+    background-color: hsl(240 10% 3.9%);
+    --tw-ring-offset-color: hsl(240 10% 3.9%)
+}
