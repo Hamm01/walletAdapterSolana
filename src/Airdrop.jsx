@@ -15,7 +15,9 @@ export const Airdrop = () => {
       setmessage('')
     } else {
       setbtndisabled(true)
-      setmessage('Connect Your wallet to airdrop Solana*')
+      setmessage(
+        'Connect Your wallet First,  To airdrop Solana or check balance*'
+      )
     }
   }, [wallet])
 
