@@ -19,3 +19,17 @@
     background-color: hsl(240 10% 3.9%);
     --tw-ring-offset-color: hsl(240 10% 3.9%)
 }
+
+.public_Address_input {
+    display: flex;
+    height: 2rem;
+    width: 100%;
+    border-radius: calc(0.5rem - 2px);
+    border-width: 0px;
+    padding: .5rem .75rem;
+    color: hsl(0, 0%, 66%);
+    line-height: 1.25rem;
+    border-color: hsl(240 3.7% 15.9%);
+    background-color: hsl(240 10% 3.9%);
+    --tw-ring-offset-color: hsl(240 10% 3.9%)
+}

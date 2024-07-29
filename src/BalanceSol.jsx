@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Flex, Heading, Button } from '@radix-ui/themes'
+import { Tooltip } from '@radix-ui/themes'
+
 import { useConnection, useWallet } from '@solana/wallet-adapter-react'
 import { LAMPORTS_PER_SOL } from '@solana/web3.js'
 export default function BalanceSol() {
@@ -24,16 +25,33 @@ export default function BalanceSol() {
     setBalance(newBalance)
   }
   return (
-    <div className="flex flex-col items-center justify-center rounded-md gap-4 max-w-[300px] p-10 bg-gradient-to-bl bg-gradient-to-tr from-purple-400 to-teal-500">
-      <div className="rounded-full bg-white px-10 py-10 bg-gradient-to-b from-gray-200 to-gray-300">
+    <div className="flex flex-col items-center justify-center rounded-md gap-4 max-w-[300px] p-10 bg-gradient-to-tr from-purple-400 to-teal-500 overflow-hidden">
+      <div className="rounded-full bg-white  px-10 py-10  bg-gradient-to-b from-gray-200 to-gray-300 ">
         <div className="flex px-10 py-10 justify-center items-center">
-          <p className="iceland text-3xl text-black text-secondary tracking-tighter absolute">
-            {' '}
-            {balance ? balance : '0.00'}{' '}
-            <span className="text-2xl font-semibold tracking-normal">SOL</span>{' '}
-          </p>
+          <Tooltip content="Devnet Tokens">
+            <p className="iceland text-3xl text-black text-secondary tracking-tighter absolute cursor-pointer">
+              {' '}
+              {balance ? balance : '0.00'}{' '}
+              <span className="text-2xl font-semibold tracking-normal">
+                SOL
+              </span>{' '}
+            </p>
+          </Tooltip>
         </div>
       </div>
+
+      <Tooltip content="Your Wallet Address">
+        <input
+          className="public_Address_input font-semibold truncate "
+          value={
+            wallet?.publicKey
+              ? wallet?.publicKey?.toBase58()
+              : 'Your Wallet Address ...'
+          }
+          readOnly
+        ></input>
+      </Tooltip>
+
       <button
         onClick={chkBalance}
         disabled={btndisabled}
