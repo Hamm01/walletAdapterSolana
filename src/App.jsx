@@ -4,6 +4,7 @@ import WalletContextProvider from './walletProvider'
 import { Airdrop } from './Airdrop'
 import { Footer } from './footer'
 import BalanceSol from './BalanceSol'
+import SendSols from './sendSols'
 
 function App() {
   return (
@@ -17,9 +18,11 @@ function App() {
             </div>
             <BalanceSol />
           </div>
+          <div className="flex flex-col gap-4 ">
+            <SendSols />
+          </div>
 
           <div className="pointer-events-none fixed top-1/4 mb-20 ml-32 right-1/4 -translate-x-1/2 translate-y-1/2 w-52 h-28 bg-fuchsia-500/80 blur-[120px]"></div>
-          <div className="flex flex-col gap-4 "></div>
         </main>
         <Footer />
       </WalletContextProvider>
