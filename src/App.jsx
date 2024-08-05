@@ -5,6 +5,7 @@ import { Airdrop } from './Airdrop'
 import { Footer } from './footer'
 import BalanceSol from './BalanceSol'
 import SendSols from './sendSols'
+import SignMessage from './SignMessage'
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
             </div>
             <BalanceSol />
           </div>
-          <div className="flex flex-col gap-4 ">
+          <div className="flex flex-row gap-4">
+            <SignMessage />
             <SendSols />
           </div>
 
