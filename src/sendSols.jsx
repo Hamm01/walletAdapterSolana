@@ -44,7 +44,7 @@ export default function SendSols() {
   }
 
   return (
-    <div className="flex flex-col max-w-xl border rounded-md p-10">
+    <div className="flex flex-col border rounded-md p-10 grow">
       <div className="flex justify-center pb-4">
         <h2 className="text-2xl font-semibold text-center">
           Transfer Your Tokens
