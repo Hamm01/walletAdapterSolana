@@ -22,7 +22,11 @@ export default function BalanceSol() {
     }
     const lamports = await connection.getBalance(wallet.publicKey)
     const newBalance = lamports / LAMPORTS_PER_SOL
-    setBalance(newBalance)
+    const formatBalance = new Intl.NumberFormat('en-us', {
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    }).format(newBalance)
+    setBalance(formatBalance)
   }
   return (
     <div className="flex flex-col items-center justify-center rounded-md gap-4 max-w-[300px] p-10 bg-gradient-to-tr from-purple-400 to-teal-500 overflow-hidden">
