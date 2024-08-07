@@ -42,13 +42,13 @@ export const Airdrop = () => {
   }
 
   return (
-    <div className="flex flex-col gap-4 items-center justify-center min-h-[300px] border rounded-md">
-      <div className="flex flex-col md:w-[400px] lg:w-[600px] p-4">
+    <div className="flex  grow flex-col gap-4 items-center justify-center border rounded-md ">
+      <div className="flex flex-col md:w-[400px] lg:w-[600px] justify-center ">
         <h2 className="font-semibold text-2xl text-center tracking-normal ">
           {' '}
           Solana Devnet Airdrop Faucet
         </h2>
-        <div className="p-6  flex flex-row space-x-2">
+        <div className="mt-4 flex flex-row space-x-2">
           <input
             type="number"
             className="input_Amount"
@@ -65,7 +65,7 @@ export const Airdrop = () => {
             Confirm Airdrop
           </button>
         </div>
-        <div className="p-6 space-x-2 text-center">
+        <div className="p-6 h-20 space-x-2 text-center">
           {message && (
             <p className=" text-md tracking-normal text-red-500">{message}</p>
           )}

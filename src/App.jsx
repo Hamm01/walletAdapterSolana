@@ -13,10 +13,9 @@ function App() {
       <WalletContextProvider>
         <main className="max-w-7xl mx-auto flex flex-col gap-4 p-4 min-h-[92vh] ">
           <Navbar />
-          <div className="flex flex-row gap-2">
-            <div className="grow">
-              <Airdrop />
-            </div>
+          <div className="flex flex-row gap-4 ">
+            <Airdrop />
+
             <BalanceSol />
           </div>
           <div className="flex flex-row gap-4">
