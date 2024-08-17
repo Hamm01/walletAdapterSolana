@@ -9,16 +9,16 @@ import SignMessage from './SignMessage'
 
 function App() {
   return (
-    <div className="bg_color_body text-white w-screen h-full ">
+    <div className="bg_color_body text-white mobile:max-w-full w-screen h-full ">
       <WalletContextProvider>
-        <main className="max-w-7xl mx-auto flex flex-col gap-4 p-4 min-h-[92vh] ">
+        <main className="lg:max-w-5xl xl:max-w-7xl mx-auto flex flex-col gap-4 p-4 min-h-[92vh] ">
           <Navbar />
-          <div className="flex flex-row gap-4 ">
+          <div className="flex flex-col md:flex-row gap-4 max-md:items-center ">
             <Airdrop />
 
             <BalanceSol />
           </div>
-          <div className="flex flex-row gap-4">
+          <div className="flex flex-col md:flex-row gap-4 max-md:items-center">
             <SignMessage />
             <SendSols />
           </div>
