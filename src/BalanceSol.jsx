@@ -29,7 +29,7 @@ export default function BalanceSol() {
     setBalance(formatBalance)
   }
   return (
-    <div className="flex flex-col items-center justify-center rounded-md gap-4 max-w-[300px] p-10 bg-gradient-to-tr from-purple-400 to-teal-500 overflow-hidden">
+    <div className="flex flex-col items-center justify-center rounded-md gap-4 mobile:w-full md:max-w-[300px] p-10 bg-gradient-to-tr from-purple-400 to-teal-500 overflow-hidden">
       <div className="rounded-full bg-white  px-10 py-10  bg-gradient-to-b from-gray-200 to-gray-300 ">
         <div className="flex px-10 py-10 justify-center items-center">
           <Tooltip content="Devnet Tokens">
