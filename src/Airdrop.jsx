@@ -42,13 +42,13 @@ export const Airdrop = () => {
   }
 
   return (
-    <div className="flex  grow flex-col gap-4 items-center justify-center border rounded-md ">
-      <div className="flex flex-col md:w-[400px] lg:w-[600px] justify-center ">
-        <h2 className="font-semibold text-2xl text-center tracking-normal ">
+    <div className="flex grow flex-col gap-4 mobile:max-sm:p-6 items-center justify-center border rounded-md ">
+      <div className="flex flex-col md:w-[400px] lg:w-[600px] justify-center items-center  ">
+        <h2 className="font-semibold mobile:text-lg sm:text-2xl text-center tracking-normal ">
           {' '}
           Solana Devnet Airdrop Faucet
         </h2>
-        <div className="mt-4 flex flex-row space-x-2">
+        <div className="mt-4 md:w-full flex flex-row space-x-2">
           <input
             type="number"
             className="input_Amount"
