@@ -44,14 +44,16 @@ export default function SendSols() {
   }
 
   return (
-    <div className="flex flex-col border rounded-md p-10 grow">
+    <div className="flex flex-col mobile:max-sm:w-full mobile:max-sm:px-6 border rounded-md p-10 grow">
       <div className="flex justify-center pb-4">
         <h2 className="text-2xl font-semibold text-center">
           Transfer Your Tokens
         </h2>
       </div>
       <div className="flex items-center pb-2 gap-3">
-        <label htmlFor="from">From</label>
+        <label htmlFor="from" className="mobile:max-md:font-semibold">
+          From
+        </label>
         <p className="input_Amount">
           {wallet?.publicKey
             ? wallet?.publicKey?.toBase58()
@@ -60,7 +62,7 @@ export default function SendSols() {
       </div>
       <div className="inputBox flex flex-col gap-4">
         <div className="inputGroup flex items-center gap-3">
-          <label htmlFor="to" className="pr-5">
+          <label htmlFor="to" className="pr-5 mobile:max-md:font-semibold">
             To
           </label>
           <input
