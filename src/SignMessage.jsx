@@ -29,14 +29,14 @@ const SignMessage = () => {
     setMessage(`Message signature: ${bs58.encode(signature)}`)
   }
   return (
-    <div className="flex flex-col max-w-lg justify-start p-10 border rounded-md ">
+    <div className="flex flex-col max-w-lg justify-start mobile:max-sm:w-full mobile:max-sm:px-6 p-10 border rounded-md ">
       <div className="flex flex-col gap-4 justify-center items-center ">
-        <h2 className="font-semibold text-2xl tracking-normal">
+        <h2 className="font-semibold mobile:text-lg mobile:max-md:text-center text-2xl tracking-normal">
           {' '}
           Signing Message using the wallet
         </h2>
         <div className="flex flex-col justify-start gap-2 p-2  min-w-full ">
-          <label htmlFor="to" className="">
+          <label htmlFor="to" className="mobile:max-md:font-semibold">
             Message
           </label>
           <input
